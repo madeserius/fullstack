@@ -17,14 +17,15 @@ export default function Hero(props) {
   return (
     <section className="container pt-4">
       <div className="row align-item-center">
-        <div className="col-auto pr-5" style={{ width: 422 }}>
+        <div className="col-auto pr-5" style={{ width: 530 }}>
           <h1 className="h2 font-weight-bold line-hight-1 mb-3">
             Forget Busy work, <br />
             Start Next Vacation
           </h1>
           <p className="mb-5 font-weight-light text-gray-500 w-5">
-            We provide what you need to enjoy your <br />
-            holiday with family. Time to make another memorable moments.
+            We provide what you need to enjoy your holiday<br/> 
+            with family. Time to make another memorable<br/>
+            moments.
           </p>
           <Button
             className="btn px-5"
@@ -35,7 +36,7 @@ export default function Hero(props) {
             Show Me Now
           </Button>
           <div className="row mt-5">
-            <div className="col-auto">
+            <div className="col-aut " style={{marginRight: 35}}>
               <img width="26" height="26"
                 src={IconTraveler}
                 alt={`${props.data.travelers} Travelers`}
@@ -48,7 +49,7 @@ export default function Hero(props) {
                 </span>
               </h6>
             </div>
-            <div className="col-auto">
+            <div className="col-auto" style={{marginRight: 35}}>
               <img width="26" height="26"
                 src={IconTreasure}
                 alt={`${props.data.treasures} Treasures`}
@@ -74,6 +75,12 @@ export default function Hero(props) {
                 </span>
               </h6>
             </div>
+          </div>
+        </div>
+        <div className="col-6 pl-5">
+          <div className="image-hero">
+            <img src={ImageHero} alt="Room with couches" className="img-fluid position-absolute" style={{ margin: '-16px 0 0 -16px', zIndex: 1}}/>
+            <img src={ImageHero_} alt="Room with couches frame" className="img-fluid position-absolute" style={{ margin: '0 -15px 0 -15px'}}/>
           </div>
         </div>
       </div>
