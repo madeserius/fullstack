@@ -7,6 +7,7 @@ import IconTraveler from "assets/images/icons/icon-traveler.svg";
 import IconTreasure from "assets/images/icons/icon-treasure.svg";
 
 import Button from "elements/Button";
+import formatNumber from "utils/formatNumber"
 export default function Hero(props) {
   function showMostPicked() {
     window.scrollTo({
@@ -14,20 +15,22 @@ export default function Hero(props) {
       behavior: "smooth",
     });
   }
+
+ 
   return (
     <section className="container pt-4">
       <div className="row align-item-center">
-        <div className="col-auto pr-5" style={{ width: 530 }}>
+        <div className="col-auto pr-5" style={{ width: 530 }} >
           <h1 className="font-weight-bold line-hight-1 mb-3">
             Forget Busy work, <br />
             Start Next Vacation
           </h1>
-          <p className="mb-5 font-weight-light text-gray-500 w-5" > 
-            We provide what you need to enjoy your holiday
+          <p className="mb-4 font-weight-light text-gray-500 w-5" > 
+            We provide what you need to enjoy your 
             <br />
-            with family. Time to make another memorable
+            holiday with family. Time to make another 
             <br />
-            moments.
+            memorable moments.
           </p>
           <Button
             className="btn px-5"
@@ -37,7 +40,7 @@ export default function Hero(props) {
           >
             Show Me Now
           </Button>
-          <div className="row mt-5">
+          <div className="row" style={{marginTop: 80}}>
             <div className="col-aut " style={{ marginRight: 35 }}>
               <img
                 width="26"
@@ -46,7 +49,7 @@ export default function Hero(props) {
                 alt={`${props.data.travelers} Travelers`}
               />
               <h6 className="mt-3">
-                {props.data.travelers}{" "}
+                {formatNumber(props.data.travelers)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   {" "}
                   travelers{" "}
@@ -61,7 +64,7 @@ export default function Hero(props) {
                 alt={`${props.data.treasures} Treasures`}
               />
               <h6 className="mt-3">
-                {props.data.treasures}{" "}
+              {formatNumber(props.data.treasures)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   {" "}
                   treasures{" "}
@@ -76,7 +79,7 @@ export default function Hero(props) {
                 alt={`${props.data.cities} Cities`}
               />
               <h6 className="mt-3">
-                {props.data.cities}{" "}
+              {formatNumber(props.data.cities)}{" "}
                 <span className="text-gray-500 font-weight-light">
                   {" "}
                   cities{" "}
@@ -91,7 +94,7 @@ export default function Hero(props) {
               src={ImageHero}
               alt="Room with couches"
               className="img-fluid position-absolute"
-              style={{ margin: "-20px 0 0 -30px", zIndex: 1 }}
+              style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
             />
             <img
               src={ImageHero_}
