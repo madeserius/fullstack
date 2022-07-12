@@ -18,13 +18,15 @@ export default function Hero(props) {
     <section className="container pt-4">
       <div className="row align-item-center">
         <div className="col-auto pr-5" style={{ width: 530 }}>
-          <h1 className="h2 font-weight-bold line-hight-1 mb-3">
+          <h1 className="font-weight-bold line-hight-1 mb-3">
             Forget Busy work, <br />
             Start Next Vacation
           </h1>
           <p className="mb-5 font-weight-light text-gray-500 w-5">
-            We provide what you need to enjoy your holiday<br/> 
-            with family. Time to make another memorable<br/>
+            We provide what you need to enjoy your holiday
+            <br />
+            with family. Time to make another memorable
+            <br />
             moments.
           </p>
           <Button
@@ -36,8 +38,10 @@ export default function Hero(props) {
             Show Me Now
           </Button>
           <div className="row mt-5">
-            <div className="col-aut " style={{marginRight: 35}}>
-              <img width="26" height="26"
+            <div className="col-aut " style={{ marginRight: 35 }}>
+              <img
+                width="26"
+                height="26"
                 src={IconTraveler}
                 alt={`${props.data.travelers} Travelers`}
               />
@@ -49,8 +53,10 @@ export default function Hero(props) {
                 </span>
               </h6>
             </div>
-            <div className="col-auto" style={{marginRight: 35}}>
-              <img width="26" height="26"
+            <div className="col-auto" style={{ marginRight: 35 }}>
+              <img
+                width="26"
+                height="26"
                 src={IconTreasure}
                 alt={`${props.data.treasures} Treasures`}
               />
@@ -63,7 +69,9 @@ export default function Hero(props) {
               </h6>
             </div>
             <div className="col-auto">
-              <img width="26" height="26"
+              <img
+                width="26"
+                height="26"
                 src={IconCities}
                 alt={`${props.data.cities} Cities`}
               />
@@ -78,9 +86,19 @@ export default function Hero(props) {
           </div>
         </div>
         <div className="col-6 pl-5">
-          <div className="image-hero">
-            <img src={ImageHero} alt="Room with couches" className="img-fluid position-absolute" style={{ margin: '-16px 0 0 -16px', zIndex: 1}}/>
-            <img src={ImageHero_} alt="Room with couches frame" className="img-fluid position-absolute" style={{ margin: '0 -15px 0 -15px'}}/>
+          <div style={{width: 520, height: 410}}>
+            <img
+              src={ImageHero}
+              alt="Room with couches"
+              className="img-fluid position-absolute"
+              style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
+            />
+            <img
+              src={ImageHero_}
+              alt="Room with couches frame"
+              className="img-fluid position-absolute"
+              style={{ margin: "0 -15px -15px 0" }}
+            />
           </div>
         </div>
       </div>
