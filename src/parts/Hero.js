@@ -22,7 +22,7 @@ export default function Hero(props) {
             Forget Busy work, <br />
             Start Next Vacation
           </h1>
-          <p className="mb-5 font-weight-light text-gray-500 w-5">
+          <p className="mb-5 font-weight-light text-gray-500 w-5" > 
             We provide what you need to enjoy your holiday
             <br />
             with family. Time to make another memorable
@@ -91,7 +91,7 @@ export default function Hero(props) {
               src={ImageHero}
               alt="Room with couches"
               className="img-fluid position-absolute"
-              style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
+              style={{ margin: "-20px 0 0 -30px", zIndex: 1 }}
             />
             <img
               src={ImageHero_}
