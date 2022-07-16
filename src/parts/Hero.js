@@ -40,7 +40,7 @@ export default function Hero(props) {
           >
             Show Me Now
           </Button>
-          <div className="row" style={{marginTop: 80}}>
+          <div className="row" style={{marginTop: 80, marginLeft: 1}} >
             <div className="col-aut " style={{ marginRight: 35 }}>
               <img
                 width="26"
@@ -48,9 +48,9 @@ export default function Hero(props) {
                 src={IconTraveler}
                 alt={`${props.data.travelers} Travelers`}
               />
-              <h6 className="mt-3">
+              <h6 className="mt-3 ">
                 {formatNumber(props.data.travelers)}{" "}
-                <span className="text-gray-500 font-weight-light">
+                <span className="text-gray-500 font-weight-light ">
                   {" "}
                   travelers{" "}
                 </span>
@@ -93,7 +93,7 @@ export default function Hero(props) {
             <img
               src={ImageHero}
               alt="Room with couches"
-              className="img-fluid position-absolute"
+              className="img-fluid position-absolute "
               style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
             />
             <img
