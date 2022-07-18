@@ -1,3 +1,4 @@
+import Button from "elements/Button";
 import React from "react";
 
 export default function MostPicked(props) {
@@ -7,8 +8,34 @@ export default function MostPicked(props) {
       <div className="container-grid">
         {props.data.map((item, index) => {
           return (
-            <div className={`item column-4${index === 0 ? " row-2" : " row-1"}`}>
-              <div className="card"> card {index + 1}</div>
+            <div
+              className={`item column-4${index === 0 ? " row-2" : " row-1"}`}
+            >
+              <div className="card card-featured">
+                <div className="tag">
+                  ${item.price}
+                  <span className="font-weight-light"> {item.unit}</span>
+                </div>
+                <figure className="img-wrapper">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.name}
+                    className="img-cover"
+                  />
+                </figure>
+                <div className="meta-wrapper">
+                  <Button
+                    type="link"
+                    className="stretched-ling d-block text-item"
+                    href={`/properties/${item._id}`}
+                  >
+                    <h5>{item.name}</h5>
+                  </Button>
+                  <span>
+                    {item.city},{item.country}
+                  </span>
+                </div>
+              </div>
             </div>
           );
         })}
