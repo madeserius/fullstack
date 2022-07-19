@@ -140,6 +140,11 @@ section {
     span {
       font-size: 0.875rem;
     }
+    :hover {
+      div {
+        text-decoration: underline;
+      }
+    }
   }
   &.card-featured {
     overflow: hidden;
